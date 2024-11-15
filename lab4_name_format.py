@@ -12,6 +12,72 @@ first_last(last_first("Bugs Bunny"))  # returns "Bugs Bunny"
 #CODE 
 #YOUR
 #FUNCTION BELOW HERE
+def last_first(name):
+    first = ""
+    last = ""
+
+    for char in name:
+        if char == " ": 
+            last = name[len(first) + 1:]
+            break
+        first += char 
+
+    return last + ", " + first 
+
+
+def first_last(name):
+    first = ""
+    last = ""
+
+    for char in name:
+        if char == ",":
+            first = name[len(last) + 2:]
+            break
+        last += char
+
+    return first + " " + last
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"""
+++++++++++++++++++++
+don't code below here
+++++++++++++++++++++++
+"""
+if __name__ == "__main__":
+  x = input("Enter your first and last name separated by a space: \n")
+  y = input("Enter your last and first name separated by a comma and a space: \n")
+  print(last_first(x))
+  print(first_last(y))
+  print(first_last(last_first(x)))
+
+
+
+
+
+
+
 
 
 

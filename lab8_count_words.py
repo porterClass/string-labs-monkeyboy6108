@@ -13,7 +13,8 @@ count_words("Count the number of words in this sentence.")  # returns 7
 #FUNCTION BELOW HERE
 
 
-
+def count_words(input_string):
+    return len(input_string.split())
 
 
 
