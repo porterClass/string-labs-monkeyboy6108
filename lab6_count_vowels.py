@@ -12,6 +12,7 @@ count_vowels("Python")  # returns 1
 #YOUR
 #FUNCTION BELOW HERE
 
+
 def count_vowels(s):
     return sum(1 for char in s.lower() if char in 'aeiou')
 
